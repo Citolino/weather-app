@@ -1,0 +1,25 @@
+<p>TESTE</p>
+<p>TESTE</p>
+<p>TESTE</p>
+<p>TESTE</p>
+
+
+<div class="search">
+  <p>TESTE</p>
+  <form #form="ngForm" (submit)="onSubmit()">
+    <p>TESTE</p>
+
+    <input type="text" placeholder="Buscar Localizacao" name="city" [(ngModel)]="initialCityName"/>
+    <span (click)="onSubmit()">
+      <fa-icon
+        animation="fade"
+        style="--fa-animation-durantion: 5s; cursor: pointer"
+        size="lg"
+        class="search-icon"
+        [icon]="searchIcon">
+      </fa-icon>
+    </span>
+
+
+  </form>
+</div>

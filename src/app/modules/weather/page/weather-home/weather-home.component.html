@@ -1,14 +1,5 @@
-<p>TESTE</p>
-<p>TESTE</p>
-<p>TESTE</p>
-<p>TESTE</p>
-
-
 <div class="search">
-  <p>TESTE</p>
   <form #form="ngForm" (submit)="onSubmit()">
-    <p>TESTE</p>
-
     <input type="text" placeholder="Buscar Localizacao" name="city" [(ngModel)]="initialCityName"/>
     <span (click)="onSubmit()">
       <fa-icon
@@ -23,3 +14,4 @@
 
   </form>
 </div>
+<app-weather-card *ngIf="weatherDatas" [weatherDatas]="weatherDatas"></app-weather-card>
